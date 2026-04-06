@@ -1,0 +1,35 @@
+# not-defteri-v2
+## 1 Genel
+Proje: not-defteri-v2 Platform: Web SPA. Not defteri. Not olusturma duzenleme silme, klasorler, etiketler, onem derecesi, arama, koyu tema, minimal.
+## 2 Ozellikler
+1 Ana Liste Tum notlar arama filtreleme
+2 Not Olusturma Yeni not
+3 Not Duzenleme Not ici duzenleme
+4 Klasorler Klasor bazli filtreleme
+5 Etiketler Etiket bazli filtreleme
+6 Onem Derecesi Dusuk orta yuksek onem
+7 Arama Basit arama cubugu
+8 Koyu Tema slate-950
+## 3 Ekranlar
+| # Ekran Tur Aciklama |
+|---|---|
+| 1 Ana Liste list-view Tum notlar arama filtre |
+| 2 Not Detay detail-view Not ici gosterim |
+| 3 Not Formu form-view Olusturma duzenleme |
+| 4 Klasorler sidebar Klasor listesi |
+| 5 Etiketler sidebar Etiket listesi |
+| 6 Ayarlar settings Tema tercihleri |
+| 7 Bos Durum empty-state Liste bos |
+| 8 Yukleme loading Skeleton |
+| 9 Hata error API hatasi |
+
+Generate a SEPARATE screen design for EVERY page, view, modal, dialog, tab panel, and settings screen described in this PRD. Do NOT skip ANY screen — even if it seems minor.
+
+MANDATORY SCREENS:
+- If the PRD mentions "settings" or "ayarlar" → generate a Settings screen
+- If the PRD mentions tabs or bottom navigation → generate EACH tab view as a separate screen
+- If the PRD mentions modals (statistics, help, share, confirmation) → generate each as a separate screen
+- If the PRD mentions error states, empty states, loading states → generate those too
+- Generate at least as many screens as there are distinct views/pages/modals in the PRD
+
+All visible text must be in Turkish. Use a dark, modern theme.

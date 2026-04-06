@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Digital Atelier - Ayarlar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#2a3043",
+                      "on-secondary": "#283044",
+                      "surface-container-low": "#151b2d",
+                      "primary": "#ffb95f",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "on-surface-variant": "#c6c6cd",
+                      "on-surface": "#dce1fb",
+                      "secondary-fixed": "#dae2fd",
+                      "on-tertiary-fixed": "#40000d",
+                      "on-primary-fixed": "#2a1700",
+                      "surface-container-lowest": "#070d1f",
+                      "surface-container-high": "#23293c",
+                      "primary-fixed-dim": "#ffb95f",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "secondary-container": "#3f465c",
+                      "surface": "#0c1324",
+                      "inverse-surface": "#dce1fb",
+                      "surface-container": "#191f31",
+                      "on-error": "#690005",
+                      "surface-bright": "#33394c",
+                      "surface-dim": "#0c1324",
+                      "on-background": "#dce1fb",
+                      "on-tertiary-container": "#e13052",
+                      "on-error-container": "#ffdad6",
+                      "secondary": "#bec6e0",
+                      "tertiary-container": "#180002",
+                      "surface-container-highest": "#2e3447",
+                      "tertiary": "#ffb2b7",
+                      "on-tertiary": "#67001b",
+                      "outline": "#909097",
+                      "error-container": "#93000a",
+                      "on-primary": "#472a00",
+                      "on-tertiary-fixed-variant": "#92002a",
+                      "inverse-primary": "#855300",
+                      "tertiary-fixed": "#ffdadb",
+                      "background": "#0c1324",
+                      "on-primary-fixed-variant": "#653e00",
+                      "primary-container": "#0e0500",
+                      "surface-tint": "#ffb95f",
+                      "on-secondary-container": "#adb4ce",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-variant": "#2e3447",
+                      "outline-variant": "#46464c",
+                      "error": "#ffb4ab",
+                      "primary-fixed": "#ffddb8",
+                      "tertiary-fixed-dim": "#ffb2b7",
+                      "on-primary-container": "#a86a00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Inter"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0c1324; }
+        ::-webkit-scrollbar-thumb { background: #2e3447; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Sidebar Navigation -->
+<aside class="bg-[#151b2d] dark:bg-[#151b2d] h-screen w-64 fixed left-0 top-0 flex flex-col h-full py-8 px-4 z-50">
+<div class="mb-10 px-2">
+<div class="text-xl font-bold text-[#dce1fb] uppercase tracking-widest mb-1">Digital Atelier</div>
+<div class="text-xs text-on-secondary-container opacity-60">Not Defteri v2</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#adb4ce] hover:text-[#dce1fb] pl-5 hover:bg-[#191f31]" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-inter body-lg tracking-tight">Notlarım</span>
+</a>
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#adb4ce] hover:text-[#dce1fb] pl-5 hover:bg-[#191f31]" href="#">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="font-inter body-lg tracking-tight">Favoriler</span>
+</a>
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#adb4ce] hover:text-[#dce1fb] pl-5 hover:bg-[#191f31]" href="#">
+<span class="material-symbols-outlined" data-icon="archive">archive</span>
+<span class="font-inter body-lg tracking-tight">Arşiv</span>
+</a>
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#adb4ce] hover:text-[#dce1fb] pl-5 hover:bg-[#191f31]" href="#">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+<span class="font-inter body-lg tracking-tight">Çöp Kutusu</span>
+</a>
+</nav>
+<div class="mt-auto space-y-2 border-t border-outline-variant/15 pt-6">
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#ffb95f] font-bold border-l-4 border-[#ffb95f] pl-4" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-inter body-lg tracking-tight">Ayarlar</span>
+</a>
+<a class="flex items-center gap-3 py-3 rounded-xl transition-colors duration-200 text-[#adb4ce] hover:text-[#dce1fb] pl-5 hover:bg-[#191f31]" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="font-inter body-lg tracking-tight">Yardım</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 right-0 w-[calc(100%-16rem)] h-16 bg-[#0c1324]/70 backdrop-blur-xl flex items-center justify-between px-8 z-40 shadow-sm border-b border-[#46464c]/15">
+<div class="flex items-center gap-6">
+<h1 class="text-lg font-black text-[#ffb95f]">Ayarlar</h1>
+<div class="hidden md:flex gap-4">
+<span class="font-inter label-md uppercase tracking-wider text-[#adb4ce] hover:text-[#ffb95f] cursor-pointer">Klasörler</span>
+<span class="font-inter label-md uppercase tracking-wider text-[#adb4ce] hover:text-[#ffb95f] cursor-pointer">Etiketler</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-[#ffb95f] text-[#472a00] px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 transition-all active:scale-95">
+                    Yeni Not
+                </button>
+<div class="flex items-center gap-3 ml-4">
+<span class="material-symbols-outlined text-[#adb4ce] cursor-pointer" data-icon="notifications">notifications</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="Profil" data-alt="professional portrait of a man in a modern office environment with soft natural lighting and minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-hy3tmPiNkBHEkQy90VYmyuhH02LJrr5UIdDH1CC7tAe9WQTDTGoPyt_Nqky3BBYMKC4WrKMKMsmuLf-MNcy17D6UcG7lI_hXC27ldwJ-F7bXVIM2Qc7ewilujmWfzZ4w1T8yu8F2aREnerb9V4m3geAJJWcS0Biuuid32PVZiF9fBWHvn_tT_RaVzIUXXPAcGSfLfrySrXO-V-Bb0hpZQRUOek-wDIUmQ5EtSv0KZ6YJfz96IVXROJJoMKwrQFlByCC1Q4jlvEU"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<section class="pt-24 px-12 pb-20 max-w-5xl">
+<div class="mb-12">
+<h2 class="text-5xl font-extrabold text-on-surface mb-4 tracking-tight">Kişisel Atelier</h2>
+<p class="text-on-secondary-container text-lg max-w-2xl leading-relaxed">Uygulama deneyiminizi özelleştirin, profilinizi yönetin ve notlarınızı koruma altına alın.</p>
+</div>
+<!-- Settings Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+<!-- Profile Section -->
+<div class="md:col-span-2 space-y-8">
+<div class="bg-surface-container p-8 rounded-xl relative overflow-hidden group">
+<div class="flex items-start justify-between mb-8">
+<div class="flex items-center gap-6">
+<div class="relative">
+<img alt="Kullanıcı Profili" class="w-24 h-24 rounded-full object-cover ring-4 ring-primary/20" data-alt="professional profile photo of a person with warm lighting in a creative studio space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlWf67tdQ-Y1c57sC7HhVXlTwd-4lM8d2Pc-ag5esRZAs2wBRxlBcphhBnq8S1junf4fCRoMPcZ3Fao3KIyJMUS-qNRJPkqcIK6kj7ndwNl19LGdO7989Zp1wb2Km9cxESZsSXbDISIVp_9H9ScyCFoN2M0yZuSla83i7wawVxRqJMocWF3foz8mG2cjU899aokDwa8pS25wkXBDYKdbc0V5J82jL-M0P8WyEGaOEw8RdWbVPHCrh94xj0Oo8e15HydtrsQwWR384"/>
+<button class="absolute bottom-0 right-0 bg-primary p-2 rounded-full text-on-primary shadow-lg active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</button>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-on-surface">Alex Johnston</h3>
+<p class="text-on-secondary-container">Kreatif Direktör &amp; Yazar</p>
+<div class="mt-2 flex items-center gap-2">
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-widest">Premium Üye</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-1.5">
+<label class="text-xs font-bold text-[#ffb95f] uppercase tracking-widest">E-posta Adresi</label>
+<div class="bg-surface-container-lowest p-3 rounded-lg text-on-surface">alex@atelier.design</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs font-bold text-[#ffb95f] uppercase tracking-widest">Kullanıcı Adı</label>
+<div class="bg-surface-container-lowest p-3 rounded-lg text-on-surface">@alex_atelier</div>
+</div>
+</div>
+</div>
+<!-- App Preferences -->
+<div class="bg-surface-container p-8 rounded-xl space-y-8">
+<h4 class="text-xl font-bold text-on-surface flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="tune">tune</span>
+                            Uygulama Tercihleri
+                        </h4>
+<!-- Theme Toggle -->
+<div class="flex items-center justify-between group">
+<div>
+<p class="font-bold text-on-surface">Koyu Tema (Slate-950)</p>
+<p class="text-sm text-on-secondary-container">Göz yorgunluğunu azaltan derin siyah arayüz.</p>
+</div>
+<div class="w-14 h-7 bg-primary rounded-full relative p-1 cursor-pointer transition-colors duration-300">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-1"></div>
+</div>
+</div>
+<div class="h-px bg-outline-variant/10"></div>
+<!-- Language Selector -->
+<div class="flex items-center justify-between group">
+<div>
+<p class="font-bold text-on-surface">Uygulama Dili</p>
+<p class="text-sm text-on-secondary-container">Arayüz metinleri için varsayılan dil.</p>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-xl flex items-center gap-3 border border-outline-variant/15 cursor-pointer hover:border-primary/30 transition-all">
+<span class="text-on-surface">Türkçe</span>
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<div class="h-px bg-outline-variant/10"></div>
+<!-- Auto Save -->
+<div class="flex items-center justify-between group">
+<div>
+<p class="font-bold text-on-surface">Otomatik Kaydetme</p>
+<p class="text-sm text-on-secondary-container">Yazarken değişiklikleri anında senkronize et.</p>
+</div>
+<div class="w-14 h-7 bg-surface-container-highest rounded-full relative p-1 cursor-pointer transition-colors duration-300">
+<div class="w-5 h-5 bg-on-secondary-container rounded-full absolute left-1"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar / Info -->
+<div class="space-y-8">
+<!-- Storage Info -->
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant/5">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+<h4 class="font-bold text-on-surface">Depolama</h4>
+</div>
+<div class="w-full bg-surface-container-lowest h-2 rounded-full mb-3 overflow-hidden">
+<div class="bg-primary h-full w-[65%]"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-secondary-container mb-6">
+<span>6.5 GB Kullanıldı</span>
+<span>10 GB Toplam</span>
+</div>
+<button class="w-full py-3 rounded-xl border border-primary/20 text-primary font-bold text-sm hover:bg-primary/5 transition-colors">
+                            Kapasite Artır
+                        </button>
+</div>
+<!-- Security Card -->
+<div class="bg-surface-container-high p-6 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-bold text-on-surface mb-2">Güvenlik Kontrolü</h4>
+<p class="text-xs text-on-secondary-container mb-6 leading-relaxed">İki aşamalı doğrulama pasif durumda. Hesabınızı şimdi koruma altına alın.</p>
+<a class="inline-flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-wider group" href="#">
+                                Yapılandır
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Abstract glow -->
+<div class="absolute -right-10 -bottom-10 w-32 h-32 bg-primary/10 blur-3xl rounded-full"></div>
+</div>
+<!-- About / Version -->
+<div class="px-6 text-center">
+<p class="text-[10px] text-on-secondary-container uppercase tracking-[0.2em] font-bold">Atelier v2.4.1</p>
+<p class="text-[10px] text-on-secondary-container/40 mt-1 uppercase tracking-widest">Digital Atelier Studio © 2024</p>
+</div>
+</div>
+</div>
+<!-- Danger Zone -->
+<div class="mt-16 pt-8 border-t border-outline-variant/15">
+<div class="bg-tertiary-container/20 p-8 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-on-tertiary-container/5">
+<div>
+<h4 class="text-xl font-bold text-on-tertiary-container">Hesabı Kapat</h4>
+<p class="text-sm text-on-secondary-container mt-1">Bu işlem geri alınamaz. Tüm notlarınız ve verileriniz kalıcı olarak silinecektir.</p>
+</div>
+<button class="bg-on-tertiary-container text-tertiary px-8 py-3 rounded-full font-bold text-sm hover:opacity-90 active:scale-95 transition-all">
+                        Hesabı Sil
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Button (FAB) - Suppressed on Settings as per instructions -->
+</body></html>
