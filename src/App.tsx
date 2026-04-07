@@ -312,7 +312,7 @@ function App() {
                   onChange={(e) => setTagInput(e.target.value)}
                   onKeyDown={handleTagKeyDown}
                   aria-label="Etiket alanı" />
-                <button className="tag-add-btn" onClick={handleAddTag} aria-label="Etiketi ekle">
+                <button className="tag-add-btn" onClick={handleAddTag} aria-label="Etiket ekle">
                   <span className="material-symbols-outlined">add</span>
                 </button>
               </div>
